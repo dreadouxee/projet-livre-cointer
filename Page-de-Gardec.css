@@ -1,0 +1,82 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps du document avec image de fond */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/010/058/149/original/back-to-school-background-with-silhouette-of-books-feathers-school-tool-doodle-and-copy-space-area-suitable-to-place-on-content-with-that-theme-free-vector.jpg"); /* ton image */
+  background-size: cover;        /* couvre tout l'écran */
+  background-position: center;   /* centrée */
+  background-attachment: fixed; /* effet léger de parallaxe */
+  color: #2c2c2c;
+  line-height: 1.7;
+  font-size: 18px;
+  padding: 2rem;
+}
+
+/* Conteneur du livre (fond lisible par-dessus l'image) */
+.book {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: rgba(255, 252, 245, 0.9); /* effet papier */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Titres */
+h1, h2, h3 {
+  font-family: "Palatino Linotype", serif;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+/* Paragraphes */
+p {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+/* Première lettre */
+p::first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  float: left;
+  margin-right: 0.3rem;
+  line-height: 1;
+}
+
+/* Citation */
+blockquote {
+  margin: 1.5rem 2rem;
+  font-style: italic;
+  color: #555;
+  border-left: 3px solid #ccc;
+  padding-left: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  .book {
+    padding: 1.2rem;
+  }
+}
