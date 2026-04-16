@@ -1,3 +1,23 @@
-body{
-  background-color: blue;
-}
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;              /* Enable flexbox */
+        min-height: 100vh;          /* Full height */
+    }
+
+    .column {
+        flex: 1;                    /* Equal width columns */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .page-gauche {
+        background-color: #f0f0f0;
+    }
+
+    .page-droite {
+        background-color: #d0eaff;
+    }
